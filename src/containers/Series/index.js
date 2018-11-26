@@ -36,7 +36,9 @@ class Series extends Component {
         {isFetching && series.length === 0 && seriesName.trim() !== "" && (
           <p>No TV series has been found with this name</p>
         )}
-        {isFetching && seriesName.trim() !== "" && <Loader />}
+        {isFetching && seriesName.trim() !== "" && series.length === 0 && (
+          <Loader />
+        )}
         {isFetching && <SeriesList list={this.state.series} />}
       </div>
     );
