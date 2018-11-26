@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import Main from "../Main";
 import "whatwg-fetch";
-import EntryPage from "./Jumbotron";
 
 class App extends Component {
   render() {
